@@ -1,0 +1,61 @@
+.truncated-number, 
+.truncated-number * {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'SegoeUI', 'Segoe UI';
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: 0 !important;
+}
+
+.truncated-number { 
+    border: 1px solid #00000000; 
+}
+
+.truncated-number.error:not(:hover) {
+    border: 1px solid #00000000 !important;
+}
+
+.truncated-number .error {
+    color: rgb(234, 6, 0);
+    font-weight: 600 !important;
+}
+
+/* Standard border */
+.truncated-number:hover { border: 1px solid rgb(102, 102, 102); }
+.truncated-number.active { border: 1px solid black; }
+.truncated-number .wrapper { border: 1px solid #00000000; }
+
+/* Error border */
+.truncated-number.error:hover,
+.truncated-number.error.active,
+.truncated-number.error:hover .wrapper,
+.truncated-number.error.active .wrapper {
+    border: 1px solid rgb(234, 6, 0) !important;
+}
+
+/* Hidden */
+.truncated-number .hidden {  
+    height: 0 !important;
+    padding: 0 !important;
+}
+
+.truncated-number label, 
+.truncated-number input {
+    overflow: hidden;
+    padding: 0.4rem 0.475rem;
+}
+
+/* Default label style */
+.truncated-number label:not(:hover) {
+    font-weight: 600;
+}
+
+.truncated-number input { border: 0; }

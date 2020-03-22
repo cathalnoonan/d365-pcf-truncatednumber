@@ -1,0 +1,31 @@
+{
+  "name": "d365-pcf-truncatednumber",
+  "version": "0.1.0",
+  "description": "Project containing your PowerApps Component Framework (PCF) control.",
+  "scripts": {
+    "build": "pcf-scripts build",
+    "clean": "pcf-scripts clean",
+    "rebuild": "pcf-scripts rebuild",
+    "start": "pcf-scripts start",
+    "tslint": "tslint -p tsconfig.json"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "@types/powerapps-component-framework": "^1.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "ts-keycode-enum": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "pcf-scripts": "^1",
+    "pcf-start": "^1",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cathalnoonan/d365-pcf-truncatednumber.git"
+  }
+}
