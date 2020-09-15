@@ -13,11 +13,13 @@
     <!--Remove TargetFramework when this is available in 16.1-->
     <TargetFramework>net462</TargetFramework>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <SolutionRootPath>src</SolutionRootPath>
   </PropertyGroup>
 
   <!-- Solution Packager overrides, un-comment to use: SolutionPackagerType (Managed, Unmanaged, Both) -->
   <PropertyGroup>
     <SolutionPackageType>Both</SolutionPackageType>
+    <SolutionPackageMapFilePath>src\map.xml</SolutionPackageMapFilePath>
   </PropertyGroup>
   
   <ItemGroup>
