@@ -19,7 +19,7 @@
   <!-- Solution Packager overrides, un-comment to use: SolutionPackagerType (Managed, Unmanaged, Both) -->
   <PropertyGroup>
     <SolutionPackageType>Both</SolutionPackageType>
-    <SolutionPackageMapFilePath>src\map.xml</SolutionPackageMapFilePath>
+    <SolutionPackageZipFilePath>dist\TruncatedNumber.zip</SolutionPackageZipFilePath>
   </PropertyGroup>
   
   <ItemGroup>
@@ -40,7 +40,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\src\project.pcfproj" />
+    <ProjectReference Include="..\control\project.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
