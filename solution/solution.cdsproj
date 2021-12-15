@@ -8,22 +8,24 @@
   <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props')" />
 
   <PropertyGroup>
+    <Name>TruncatedNumber</Name>
     <ProjectGuid>a56f72b6-1c56-4185-80bf-6c1d04f238f7</ProjectGuid>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <!--Remove TargetFramework when this is available in 16.1-->
     <TargetFramework>net462</TargetFramework>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-    <SolutionRootPath>src</SolutionRootPath>
   </PropertyGroup>
-
+  
   <!-- Solution Packager overrides, un-comment to use: SolutionPackagerType (Managed, Unmanaged, Both) -->
   <PropertyGroup>
-    <SolutionPackageType>Both</SolutionPackageType>
-    <SolutionPackageZipFilePath>dist\TruncatedNumber.zip</SolutionPackageZipFilePath>
+    <SolutionRootPath>src</SolutionRootPath>
+    <SolutionPackageType>Managed</SolutionPackageType>
+    <SolutionPackageZipFilePath>..\dist\$(Name).zip</SolutionPackageZipFilePath>
   </PropertyGroup>
   
   <ItemGroup>
     <PackageReference Include="Microsoft.PowerApps.MSBuild.Solution" Version="1.*" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
   
   <ItemGroup>
@@ -40,7 +42,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\control\project.pcfproj" />
+    <ProjectReference Include="..\control\control.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
