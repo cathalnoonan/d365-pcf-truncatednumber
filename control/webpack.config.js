@@ -3,7 +3,10 @@
 /**
  * @type { import('webpack').Configuration }
  */
-module.exports = {
+ module.exports = {
+  // Generate a source map to make debugging easier.
   devtool: 'source-map',
-  //target: ['web', 'es5'],
+
+  // Support older browsers.
+  target: ['web', 'es5'],
 }
