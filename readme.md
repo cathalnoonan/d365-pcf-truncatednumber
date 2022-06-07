@@ -1,4 +1,7 @@
 # D365 PCF - Truncated Number Control
+
+[![Build](https://github.com/cathalnoonan/d365-pcf-truncatednumber/actions/workflows/BUILD.yml/badge.svg)](https://github.com/cathalnoonan/d365-pcf-truncatednumber/actions/workflows/BUILD.yml)
+
 Displays the value of a number field truncated to remove trailing zeros
 
 ![Sample](./img/d365-pcf-truncatednumber.gif)
