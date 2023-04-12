@@ -18,7 +18,7 @@ If the control must be added to another solution that will be deployed to other 
 If you wish to build the control yourself, follow the steps below
 
 #### Prerequisites
-- dotnet 5.0 is installed
+- dotnet 6.0 is installed
 - NPM is installed (this is bundled with Nodejs)
 - Access to the internet to download packages from NPM
 
@@ -26,6 +26,7 @@ If you wish to build the control yourself, follow the steps below
 1. Clone this repository
 2. Open a command prompt or terminal in the root directory of the repo
 3. Run the build script:
-  - On Windows, this is `./build.bat`
-  - On Mac or Linux, this is `./build.sh`
+  - ```bash
+    dotnet build
+    ```
 4. Copy the built solution from the `dist` folder
