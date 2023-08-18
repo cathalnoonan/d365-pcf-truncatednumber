@@ -1,20 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <control namespace="Cathal" constructor="TruncatedNumber" display-name-key="TruncatedNumber" description-key="TruncatedNumber_description" control-type="standard"
-    version="1.1.2">
-
-    <property name="value" display-name-key="value_Display_Key" description-key="value_Desc_Key" of-type-group="numbers" usage="bound" required="true"/>
-    
+  <control namespace="Cathal" constructor="TruncatedNumber" display-name-key="TruncatedNumber" description-key="TruncatedNumber_description" control-type="standard" version="1.1.2">
+    <property name="value" display-name-key="value_Display_Key" description-key="value_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
     <type-group name="numbers">
       <type>FP</type>
       <type>Decimal</type>
     </type-group>
-    
     <resources>
-      <code path="index.ts" order="1"/>
-      <css path="styles.css" order="1"/>
-      <resx path="strings/TruncatedNumber.1033.resx" version="1.1.2"/>
+      <code path="index.ts" order="1" />
+      <css path="styles.css" order="1" />
+      <resx path="strings/TruncatedNumber.1033.resx" version="1.1.2" />
     </resources>
-    
   </control>
 </manifest>
