@@ -1,4 +1,4 @@
-.truncated-number, 
+.truncated-number,
 .truncated-number * {
     width: 100%;
     margin: 0;
@@ -15,8 +15,8 @@
     outline: 0 !important;
 }
 
-.truncated-number { 
-    border: 1px solid #00000000; 
+.truncated-number {
+    border: 1px solid #00000000;
 }
 
 .truncated-number.error:not(:hover) {
@@ -42,12 +42,12 @@
 }
 
 /* Hidden */
-.truncated-number .hidden {  
+.truncated-number .hidden {
     height: 0 !important;
     padding: 0 !important;
 }
 
-.truncated-number label, 
+.truncated-number label,
 .truncated-number input {
     overflow: hidden;
     padding: 0.4rem 0.475rem;
