@@ -50,6 +50,8 @@ export class TruncatedNumber implements ComponentFramework.StandardControl<IInpu
 
         const { editable, readable } = context.parameters.value.security || { editable: true, readable: true }
 
+        const isReadonly = context.mode.isControlDisabled
+
         const { numberDecimalSeparator, numberGroupSeparator, numberGroupSizes } = context.userSettings.numberFormattingInfo
 
         const { MaxValue, MinValue } = context.parameters.value.attributes || { MaxValue: 0, MinValue: 0 }
@@ -57,7 +59,7 @@ export class TruncatedNumber implements ComponentFramework.StandardControl<IInpu
         const precision = (context.parameters.value.attributes as any).Precision || 4
 
         return {
-            editable,
+            editable: editable && !isReadonly,
             readable,
             value,
             decimalSeparator: numberDecimalSeparator,
