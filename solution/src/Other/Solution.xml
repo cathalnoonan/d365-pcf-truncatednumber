@@ -5,7 +5,7 @@
     <UniqueName>TruncatedNumber</UniqueName>
     <LocalizedNames>
       <!-- Localized Solution Name in language code -->
-      <LocalizedName description="Truncated Number (PCF)" languagecode="1033" />
+      <LocalizedName description="Truncated Number (PCF). https://github.com/cathalnoonan/d365-pcf-truncatednumber" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.2.0</Version>
