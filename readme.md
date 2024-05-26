@@ -19,7 +19,7 @@ If the control must be added to another solution that will be deployed to other 
 If you wish to build the control yourself, follow the steps below
 
 #### Prerequisites
-- dotnet 6.0 is installed
+- dotnet 8.0 is installed
 - NPM is installed (this is bundled with Nodejs)
 - Access to the internet to download packages from NPM
 
