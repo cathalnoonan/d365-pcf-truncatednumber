@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <control namespace="Cathal" constructor="TruncatedNumber" display-name-key="TruncatedNumber" description-key="TruncatedNumber_description" control-type="standard" version="1.2.2">
+  <control namespace="Cathal" constructor="TruncatedNumber" display-name-key="TruncatedNumber" description-key="TruncatedNumber_description" control-type="standard" version="1.2.3">
     <property name="value" display-name-key="value_Display_Key" description-key="value_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
     <type-group name="numbers">
       <type>FP</type>
@@ -9,7 +9,7 @@
     <resources>
       <code path="index.ts" order="1" />
       <css path="styles.css" order="1" />
-      <resx path="strings/TruncatedNumber.1033.resx" version="1.2.2" />
+      <resx path="strings/TruncatedNumber.1033.resx" version="1.2.3" />
     </resources>
   </control>
 </manifest>
